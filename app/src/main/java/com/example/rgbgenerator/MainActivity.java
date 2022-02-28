@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 r = progress;
-                ustawKolor(r, g, b);
+                zmianakoloru(r, g, b);
             }
 
             @Override
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 g = progress;
-                ustawKolor(r, g, b);
+                zmianakoloru(r, g, b);
             }
 
             @Override
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 b = progress;
-                ustawKolor(r, g, b);
+                zmianakoloru(r, g, b);
             }
 
             @Override
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void ustawKolor(int r, int g, int b){
+    public void zmianakoloru(int r, int g, int b){
         colours.setBackgroundColor(Color.rgb(r, g, b));
     }
 
@@ -94,6 +94,6 @@ public class MainActivity extends AppCompatActivity {
         Random g = new Random();
         Random b = new Random();
 
-        ustawKolor(r.nextInt(256), g.nextInt(256), b.nextInt(256));
+        zmianakoloru(r.nextInt(256), g.nextInt(256), b.nextInt(256));
     }
 }
