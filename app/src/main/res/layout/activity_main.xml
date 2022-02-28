@@ -19,7 +19,8 @@
         android:id="@+id/textr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="R"
+        android:text="Red"
+        android:textSize="20dp"
         />
     <SeekBar
         android:id="@+id/r"
@@ -31,8 +32,9 @@
         android:id="@+id/textg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="G"
+        android:text="Green"
         android:layout_below="@+id/r"
+        android:textSize="20dp"
         />
     <SeekBar
         android:id="@+id/g"
@@ -43,8 +45,9 @@
         android:id="@+id/textb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="B"
+        android:text="Blue"
         android:layout_below="@+id/g"
+        android:textSize="20dp"
         />
     <SeekBar
         android:id="@+id/b"
