@@ -13,7 +13,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     private SeekBar red, green, blue;
-    private LinearLayout kolorek;
+    private LinearLayout colours;
     private int r = 0, g = 0, b = 0;
 
     @Override
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         red = findViewById(R.id.r);
         green = findViewById(R.id.g);
         blue = findViewById(R.id.b);
-        kolorek = findViewById(R.id.paleta);
+        colours = findViewById(R.id.paleta);
 
         red.setMax(255);
         green.setMax(255);
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ustawKolor(int r, int g, int b){
-        kolorek.setBackgroundColor(Color.rgb(r, g, b));
+        colours.setBackgroundColor(Color.rgb(r, g, b));
     }
 
     public void losuj(View view) {
